@@ -82,7 +82,7 @@ def fg_extractor(param):
                 min_y = min(min_y, y)
                 max_x = max(max_x, x+w)
                 max_y = max(max_y, y+h)
-            #cv2.rectangle(img_fg, 
+            cv2.rectangle(img_fg, 
                 (max(0, min_x-roi_offset), max(0, min_y-roi_offset)),
                 (min(width-1, max_x+roi_offset), min(height-1, max_y+roi_offset)),
                 (0, 0, 255), 2)
